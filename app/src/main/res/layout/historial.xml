@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0f8be3"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:backgroundTint="#e3670f"
+        android:layout_margin="16dp"
+        android:onClick="volver" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <TableLayout
+            android:id="@+id/tableNumeros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+
+            android:stretchColumns="*">
+
+            <!-- Encabezado de la tabla -->
+            <TableRow
+                android:id="@+id/table"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/resultados"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="Resultados"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>
